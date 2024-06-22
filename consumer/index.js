@@ -15,7 +15,6 @@ app.use((_, res, next) => {
 });
 
 app.get('/test', (req, res) => {
-  console.log('Hitting test endpoint');
   res.status(200).send({ msg: 'Hello world' });
 });
 
