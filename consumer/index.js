@@ -21,7 +21,7 @@ app.get('/test', (req, res) => {
 
 app.get('/orders', async (req, res) => {
   const orders = await orderClient.fetchOrders();
-  res.status(200).send({ orders });
+  res.status(200).send(orders);
 });
 
 app.listen(PORT, () => {

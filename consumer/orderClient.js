@@ -1,10 +1,9 @@
 const axios = require('axios');
 
-const orderApiUrl = 'http://localhost:5000';
+const orderApiUrl = 'http://localhost:5050';
 
 const fetchOrders = async () => {
-  const res = await axios.get(orderApiUrl);
-  console.log('data is', res.data);
+  const res = await axios.get(`${orderApiUrl}/orders`);
   return res.data;
 }
 
