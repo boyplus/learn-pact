@@ -1,0 +1,9 @@
+{
+  "name": "pacts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@pact-foundation/pact": "^13.0.0"
+  }
+}
