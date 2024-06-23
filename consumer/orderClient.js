@@ -1,9 +1,9 @@
-const axios = require('axios');
+const axios = require('axios')
 const { Order } = require('./order')
-
-const orderApiUrl = 'http://localhost:5050';
+require('dotenv').config();
 
 const fetchOrders = async () => {
+  const orderApiUrl = `http://localhost:${process.env.API_PORT}`;
   const res = await axios.get(`${orderApiUrl}/orders`);
   const orders = res.data;
   return orders.map(order => new Order(order.id, order.items));
