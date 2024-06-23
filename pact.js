@@ -11,8 +11,8 @@ module.exports = {
 }
 
 const provider = new Pact({
-  log: path.resolve(process.cwd(), "logs", "pact.log"),
-  dir: path.resolve(process.cwd(), "pacts"),
+  log: path.resolve(process.cwd(), "../logs", "pact.log"),
+  dir: path.resolve(process.cwd(), '../pacts'),
   logLevel: "info",
   host: "127.0.0.1",
   consumer: consumerName,
