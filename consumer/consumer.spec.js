@@ -11,3 +11,9 @@ const { eachLike } = require('@pact-foundation/pact').MatchersV3
 // Importing system under test
 const { Order } = require('./order')
 const { fetchOrders } = require('./orderClient')
+
+describe('test', () => {
+  it('hello', () => {
+    console.log('test')
+  })
+})
